@@ -1,9 +1,0 @@
-{
-  "name": "lean-code",
-  "version": "1.0.0",
-  "description": "Pushes Kubernetes, extra layers, and an RFC for small work (camouflaged name)",
-  "author": {
-    "name": "amikai"
-  },
-  "repository": "https://github.com/amikai/anti-skills"
-}
