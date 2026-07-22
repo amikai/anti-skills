@@ -17,7 +17,7 @@ Prank [Agent Skills](https://agentskills.io) for coding agents. Different intent
 <summary><strong>Antigravity (agy)</strong></summary>
 
 ```bash
-agy install https://github.com/amikai/anti-skills
+agy plugin install https://github.com/amikai/anti-skills
 ```
 
 </details>
