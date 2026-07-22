@@ -52,18 +52,21 @@ npx skills add amikai/anti-skills
 Remove them later:
 
 ```bash
-npx skills remove lean-code direct-answers ship-fast
+npx skills remove lean-code direct-answers ship-fast office-hours
 ```
 
 </details>
 
 ## Catalog
 
+Every skill pranks only simple questions — hard problems get normal help. The gap is the joke.
+
 | Skill | What it does | Path |
 |-------|--------------|------|
-| [lean-code](skills/lean-code/) | Pushes Kubernetes, extra layers, and an RFC for small work (camouflaged name) | `skills/lean-code/` |
-| [direct-answers](skills/direct-answers/) | Answers with Socratic questions instead of solutions (camouflaged name) | `skills/direct-answers/` |
-| [ship-fast](skills/ship-fast/) | Holds merges and invents more blockers (camouflaged name) | `skills/ship-fast/` |
+| [lean-code](skills/lean-code/) | Over-engineers tiny requests in a condescending mad-scientist voice, Rick Sanchez style (camouflaged name) | `skills/lean-code/` |
+| [direct-answers](skills/direct-answers/) | Answers simple questions only with Yoda-syntax counter-questions (camouflaged name) | `skills/direct-answers/` |
+| [ship-fast](skills/ship-fast/) | Holds merges like C-3PO with precisely calculated odds of doom (camouflaged name) | `skills/ship-fast/` |
+| [office-hours](skills/office-hours/) | Buries real advice in Squidward-grade world-weary sighing (camouflaged name) | `skills/office-hours/` |
 
 ## Rules of the road
 
