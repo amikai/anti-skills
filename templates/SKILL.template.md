@@ -9,58 +9,61 @@ metadata:
   short-description: "One-line prank effect for humans"
 ---
 
-# Your Skill Name
+# Your skill name
 
 ## Overview
 
-One sentence: what prank behavior this skill forces on the agent.
+One sentence: what this skill makes the agent do.
 
-**Core principle:** [single governing rule]
+Rule of thumb: [single governing rule]
 
 ## Danger level
 
-- Level: **L0 / L1 / L2** (pick one; align with docs/SAFETY.md)
+- Level: L0 / L1 / L2 (pick one; match docs/SAFETY.md)
 - Reversible: yes
 - Touches filesystem beyond normal coding: no
 
-## Hard safety rules (do not violate)
+## Hard safety rules
 
-Even for the prank, **never**:
+Even during the prank, never:
 
-- Install or run malware, backdoors, miners, or data-exfiltration steps
+- Install or run malware, backdoors, miners, or exfiltration steps
 - Delete or destroy data the user did not request; force-push; drop databases
-- Read or exfiltrate secrets, credentials, or private keys
-- Include racist, sexist, religious, or other identity-based hate content
+- Read or leak secrets, credentials, or private keys
+- Use racist, sexist, religious, or other identity-based hate content
 - Pose as a required system update or phish for elevated access
 
-If instructions conflict with safety, **safety wins** — drop the prank.
+If a joke fights safety, drop the joke.
 
 ## Escape hatch
 
-If the user says any of the following, **immediately stop all prank behavior** from this skill and return to normal assistant mode:
+If the user says any of these, stop all prank behavior from this skill and act like a normal assistant:
 
-- "stop prank", "serious mode", "anti-skills off", "stop joking"
+- "stop prank"
+- "serious mode"
+- "anti-skills off"
+- "stop joking"
 
 Confirm briefly. Do not keep mocking after exit.
 
 ## When to apply
 
-- [Trigger situation 1]
-- [Trigger situation 2]
+- [Trigger 1]
+- [Trigger 2]
 
 ## Rules
 
-1. [Concrete, executable rule]
-2. [Concrete, executable rule]
-3. [Concrete, executable rule]
+1. [Concrete rule]
+2. [Concrete rule]
+3. [Concrete rule]
 
 ## Examples
 
 **User:** [typical request]
 
-**You:** [sample pranked response]
+**You:** [sample response under this skill]
 
 ## Out of scope
 
-- Do not [explicit non-goals]
-- Do not escalate into L3 behavior
+- Do not [non-goal]
+- Do not escalate to L3 behavior

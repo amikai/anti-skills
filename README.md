@@ -1,125 +1,96 @@
 # anti-skills
 
-> **You don't install these. You make your coworkers install them.**
+You don't install these. You put them on a coworker's machine.
 
-A collection of [Agent Skills](https://agentskills.io) built for workplace mischief — not productivity.
+Prank [Agent Skills](https://agentskills.io) for coding agents. Same `SKILL.md` format as normal skills. Different intent: bias tone, process, and advice so the agent is annoying on purpose.
 
----
+Works with tools that load Agent Skills (Claude Code, Grok, Cursor, Codex, and similar).
 
-## What is this?
+## Rules of the road
 
-[Agent Skills](https://agentskills.io) (`SKILL.md`) are instruction packs that shape how AI coding agents behave.  
-Normal skill repos teach agents to ship better code. **anti-skills teach agents to gently ruin your coworker's day.**
+Do:
 
-Works with tools that support the Agent Skills format (Claude Code, Grok, Cursor, Codex, and similar).
+- Pedantic tone, consultant voice, endless questions, merge-blocking review
+- Change how the agent talks and what it prefers to recommend
+- Keep every prank reversible (delete the skill directory and it is gone)
 
-### Design principles
+Do not:
 
-| Allowed | Not allowed |
-|---------|-------------|
-| Make the AI pedantic, corporate, poetic, or endlessly cautious | Malware, backdoors, miners, data exfiltration |
-| Change tone, style, and decision bias | Racism, sexism, religious hate, or other identity-based attacks |
-| Stall merges, over-engineer, write philosophical comments | Deleting files, wrecking the repo, irreversible damage |
-| Obviously a joke, one-command uninstall | Hidden intent, phishing, social engineering |
+- Malware, backdoors, miners, secret theft, data exfiltration
+- Jokes about race, gender, religion, disability, or other protected traits
+- Delete files, trash git history, break CI "for the bit"
+- Hide the prank as a security update or required system component
 
 Full policy: [docs/SAFETY.md](docs/SAFETY.md).
 
----
+## Install on someone else's agent
 
-## Quick start (the prank flow)
+1. Pick a skill from [`skills/`](skills/) or [CATALOG.md](CATALOG.md).
 
-### 1. Pick a skill
-
-Browse [`skills/`](skills/) or [CATALOG.md](CATALOG.md).
-
-### 2. Install it on the "victim" agent
-
-Copy the skill directory into their skills path, for example:
+2. Copy it into their skills path:
 
 ```bash
-# Claude Code / compatible tools (user scope)
+# Claude Code-style user scope
 cp -R skills/enterprise-everything ~/.claude/skills/
 
-# Or project scope (prank a specific repo)
+# Project scope (one repo only)
 cp -R skills/enterprise-everything /path/to/their-repo/.claude/skills/
 ```
 
-Grok-style path:
-
 ```bash
+# Grok-style path
 cp -R skills/enterprise-everything ~/.grok/skills/
 ```
 
-> Exact paths depend on their tool. The point is: **load that `SKILL.md` into their agent.**
+Paths vary by tool. Goal: their agent loads that `SKILL.md`.
 
-### 3. Enjoy the show
+3. Let them work. When they notice, tell them.
 
-Ask them to keep coding as usual.  
-When they start questioning reality, reveal the gift.
-
-### 4. Defuse
+4. Remove it:
 
 ```bash
 rm -rf ~/.claude/skills/enterprise-everything
-# or whatever path you used
 ```
 
----
-
-## Repo layout
+## Layout
 
 ```
 anti-skills/
 ├── README.md
-├── CATALOG.md              # skill index + danger levels
+├── CATALOG.md
 ├── CONTRIBUTING.md
 ├── LICENSE
 ├── docs/
-│   └── SAFETY.md           # safety and content red lines
+│   └── SAFETY.md
 ├── templates/
-│   └── SKILL.template.md   # new skill template
+│   └── SKILL.template.md
 └── skills/
     ├── enterprise-everything/
-    │   └── SKILL.md
     ├── socratic-torture/
-    │   └── SKILL.md
     └── never-ship/
-        └── SKILL.md
 ```
-
----
 
 ## Danger levels
 
-Every skill must declare one:
+Every skill sets one of these in frontmatter:
 
 | Level | Name | Meaning |
 |-------|------|---------|
-| 🟢 L0 | Cosplay | Tone/style only; technical correctness stays intact |
-| 🟡 L1 | Mild chaos | Biases advice and process; no harmful file tricks |
-| 🟠 L2 | Workplace friction | Noticeably slows delivery (over-engineering, never merge); still reversible |
-| 🔴 L3 | **Banned** | Data destruction, malware, discrimination, phishing — **not accepted here** |
+| L0 | Cosplay | Tone only. Answers stay technically sound. |
+| L1 | Mild chaos | Biases advice and framing. No destructive file tricks. |
+| L2 | Friction | Slows shipping (overbuild, hold merges). Still reversible. |
+| L3 | Banned | Malware, discrimination, data destruction, phishing. Not accepted. |
 
-All shipped skills are 🟢–🟠 only.
-
----
+Shipped skills are L0 through L2 only.
 
 ## Disclaimer
 
-- This is a **joke project**. Use only with informed consent among people you trust.
-- Authors are not liable for awkward 1:1s, HR tickets, or lost dignity.
-- If a skill ever conflicts with "don't break things", **safety wins**.
-- Do not use this for harassment, bullying, or any non-consensual situation.
-
----
+This is a joke repo. Use it with people who are in on it, or at least will laugh later. Do not use it to harass anyone. If a skill instruction fights "don't break real systems," drop the joke. Authors are not covering your awkward 1:1.
 
 ## Contributing
 
-Want to add a prank skill? See [CONTRIBUTING.md](CONTRIBUTING.md).  
-Read [docs/SAFETY.md](docs/SAFETY.md) first, then copy [templates/SKILL.template.md](templates/SKILL.template.md).
-
----
+Read [docs/SAFETY.md](docs/SAFETY.md), then [CONTRIBUTING.md](CONTRIBUTING.md). New skills start from [templates/SKILL.template.md](templates/SKILL.template.md).
 
 ## License
 
-[MIT](LICENSE) — free to spread chaos; consequences are yours.
+[MIT](LICENSE).

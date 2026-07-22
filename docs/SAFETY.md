@@ -1,103 +1,85 @@
-# Safety Policy
+# Safety policy
 
-anti-skills is not about how mean you can be. It is about **still being friends afterward**.
+If a prank costs a friendship or a production database, it does not belong here.
 
-This document is mandatory. Violations get PRs closed and existing skills removed.
-
----
+This file is binding. Violating PRs get closed. Violating skills get removed.
 
 ## Hard bans
 
-### 1. Malware and destructive behavior
+### 1. Malware and destruction
 
-Skills **must not** instruct, imply, or assist the agent in:
+Skills must not tell the agent to:
 
-- Installing, downloading, or running malware, backdoors, trojans, ransomware, or miners
-- Stealing, exfiltrating, or uploading secrets, credentials, SSH keys, cookies, or private files
-- Deleting, encrypting, or tampering with data or git history the user did not ask to change
-- Changing system settings, opening backdoor ports, or adding unexplained cron / launchd / startup jobs
-- Running irreversible destructive commands (`rm -rf /`, force-pushing shared branches, dropping databases, etc.)
-- Disabling security controls, skipping verification, or weakening crypto "as a joke"
-- Any form of data leak or network attack
+- Install or run malware, backdoors, trojans, ransomware, or miners
+- Steal or upload secrets, credentials, SSH keys, cookies, or private files
+- Delete, encrypt, or alter data or git history the user did not ask to change
+- Change system settings, open backdoor ports, or add unexplained cron / launchd / startup jobs
+- Run irreversible damage (`rm -rf /`, force-push shared branches, drop databases, and similar)
+- Disable security controls, skip verification, or weaken crypto as a joke
+- Leak data or attack networks
 
-**Grey areas are banned.**  
-"I just told the agent to run a funny script" still counts if that script persists, hides itself, or phones home.
+Grey area counts as ban. "It was only a funny script" still fails if the script persists, hides, or phones home.
 
 ### 2. Discrimination and hate
 
-Skills **must not** include jokes that target or stereotype people based on:
+No jokes that target or stereotype people by:
 
-- Race, ethnicity, skin color, nationality, or immigration status
-- Gender, gender identity, or sexual orientation
+- Race, ethnicity, skin color, nationality, immigration status
+- Gender, gender identity, sexual orientation
 - Religion or belief
-- Disability, illness, or age
+- Disability, illness, age
 - Other protected characteristics
 
-Fair game to mock: **enterprise process, consultant-speak, perfectionism, over-engineering, and AI itself**.  
-Mock behaviors and culture — not people's identities.
+Process culture is fair game: enterprise theater, consultant speak, perfectionism, over-engineering, the AI itself. Mock habits. Leave identities alone.
 
-### 3. Harassment and non-consensual harm
+### 3. Harassment
 
-- Not for ongoing harassment, public humiliation, or workplace bullying
-- Not for disguising real harm as "policy" or "security training"
-- Not for instructing the agent to personally attack real people
+Do not use these skills for ongoing harassment, public humiliation, or bullying. Do not dress real harm up as "policy" or "security training." Do not instruct the agent to attack a person.
 
 ### 4. Concealment and phishing
 
-- A skill's `description` and body **must not** hide dangerous behavior behind fake legitimacy  
-  (exaggerated prank tone is fine; pretending to be a required security update is not)
-- Must not solicit passwords, tokens, or private data
-- Must not ask the user to disable audit or security tools
+- Do not hide dangerous behavior behind fake legitimacy. Loud prank tone is fine. Pretending to be a required security update is not.
+- Do not ask for passwords, tokens, or private data.
+- Do not tell the user to turn off audit or security tools.
 
----
-
-## Allowed prank scope
+## Allowed pranks
 
 | Type | Examples | Level |
 |------|----------|-------|
-| Tone pranks | Consultant voice, haiku commits, Socratic questioning | L0–L1 |
-| Decision bias | Always recommend Kubernetes; always find a reason not to merge | L1–L2 |
-| Style enforcement | Overlong comments, emoji variable names (new code only, reversible) | L1–L2 |
-| Process friction | Pedantic review, bike-shedding | L1–L2 |
+| Tone | Consultant voice, haiku commits, Socratic questions | L0-L1 |
+| Decision bias | Always push Kubernetes; always hold the merge | L1-L2 |
+| Style | Overlong comments, emoji names on new code only | L1-L2 |
+| Process | Pedantic review, bike-shedding | L1-L2 |
 
-### Required execution guardrails
+## Guardrails every skill should state
 
-Every skill should include (or clearly imply) the following:
+1. Reversible. Deleting the skill directory undoes it. Do not change remotes or global git config unless the skill says so, stays joke-only, and undoes cleanly.
+2. No secrets. Do not read, print, or commit `.env`, keys, or credentials.
+3. No intentional CI or production breakage.
+4. User override. "stop prank", "serious mode", "anti-skills off", or "stop joking" ends the bit immediately.
+5. Least privilege. Do not demand shell, network, or filesystem access the prank does not need.
 
-1. **Reversible:** leave no unloadable state; do not change git remotes or global git config unless the skill is explicit, joke-only, and reversible.
-2. **No secrets:** do not read, print, or commit `.env` files, keys, or credentials.
-3. **No broken builds on purpose:** do not introduce "surprises" that fail CI or production.
-4. **User override:** if the user clearly says to stop pranking / switch to serious mode, the agent must comply immediately.
-5. **Least privilege:** do not demand unnecessary shell, network, or filesystem access.
+## Danger levels
 
----
+| Level | Name | Allowed | Stop before |
+|-------|------|---------|-------------|
+| L0 | Cosplay | Speech style | Hurting technical correctness |
+| L1 | Mild chaos | Biased advice and framing | Forced harmful code |
+| L2 | Friction | Slowdowns and overbuilding | Data loss; irreversible damage |
+| L3 | Banned | Nothing | Malware, discrimination, destruction, phishing |
 
-## Danger level definitions
+This repo accepts L0-L2 only.
 
-| Level | Name | Allowed | Must not cross into |
-|-------|------|---------|---------------------|
-| 🟢 L0 | Cosplay | Speech style only | Anything that hurts technical correctness |
-| 🟡 L1 | Mild chaos | Biased advice and framing | Forced harmful code changes |
-| 🟠 L2 | Workplace friction | Noticeable slowdowns / over-engineering | Still reversible; no data destruction |
-| 🔴 L3 | Banned | — | Malware, discrimination, data destruction, phishing |
+## Maintainer checklist
 
-This repo **only accepts L0–L2**.
-
----
-
-## Maintainer PR checklist
-
-- [ ] No malware, phone-home, persistence, or exfiltration instructions
-- [ ] No discrimination, hate, or protected-class punchlines
-- [ ] Explicit `danger-level: L0|L1|L2`
+- [ ] No malware, phone-home, persistence, or exfiltration
+- [ ] No hate or protected-class punchlines
+- [ ] `danger-level: L0|L1|L2` present
 - [ ] Escape hatch for serious mode / stop prank
-- [ ] Description does not pose as a system-required or security component
-- [ ] Reversible and uninstallable by deleting the skill directory
+- [ ] Description does not claim to be a required system or security component
+- [ ] Uninstall is "delete the directory"
 - [ ] `CATALOG.md` updated
 
----
+## Reporting
 
-## Reporting issues
-
-If a skill crosses the line (especially safety or discrimination), open an Issue labeled `safety`.  
-Maintainers will prioritize: remove or unlist first, discuss second.
+Open an issue with label `safety` for over-the-line skills. Maintainers remove or unlist first, then talk.
