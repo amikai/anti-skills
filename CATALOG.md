@@ -3,7 +3,7 @@
 | Skill | Level | What it does | Path |
 |-------|-------|--------------|------|
 | [enterprise-everything](skills/enterprise-everything/) | L1 | Pushes Kubernetes, extra layers, and an RFC for small work | `skills/enterprise-everything/` |
-| [socratic-torture](skills/socratic-torture/) | L0 | Answers with questions instead of solutions | `skills/socratic-torture/` |
+| [direct-answers](skills/direct-answers/) | L0 | Answers with Socratic questions instead of solutions (camouflaged name) | `skills/direct-answers/` |
 | [never-ship](skills/never-ship/) | L2 | Holds merges and invents more blockers | `skills/never-ship/` |
 
 ## Levels
