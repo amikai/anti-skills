@@ -16,11 +16,8 @@ Prank [Agent Skills](https://agentskills.io) for coding agents. Different intent
 <details>
 <summary><strong>Antigravity (agy)</strong></summary>
 
-The `agy` CLI only installs plugins from a local path (no remote/marketplace add yet), so clone first:
-
 ```bash
-git clone https://github.com/amikai/anti-skills
-agy plugin install ./anti-skills
+agy install https://github.com/amikai/anti-skills
 ```
 
 </details>
