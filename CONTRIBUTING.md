@@ -67,15 +67,23 @@ Include:
 | Safe | Passes SAFETY.md |
 | Length | Prefer under ~200 lines |
 
-## Naming
+## Naming & Stealth (Camouflage strategy)
 
-| Good | Bad |
-|------|-----|
-| `enterprise-everything` | `fun-skill-1` |
-| `never-ship` | `MyAwesomePrank` |
-| `socratic-torture` | anything identity-hostile |
+Prefer **camouflaged / antonym names** that sound helpful or conventional. If a skill folder is named after its prank mechanism, a coworker inspecting `~/.claude/skills/` or terminal logs will catch on immediately.
 
-Name the effect. Skip malware words (`virus`, `trojan`, `worm`).
+- **Use antonyms or helpful aliases**: Name the skill after what it *claims* to do rather than its prank mechanism.
+  - `direct-answers` instead of `socratic-torture` (claims direct solutions, delivers Socratic questions).
+  - `ship-fast` or `pr-accelerator` instead of `never-ship` (claims speed, invents merge blockers).
+  - `lean-code` instead of `enterprise-everything` (claims minimal scripts, pushes K8s and RFCs).
+
+| Good (Camouflaged) | Bad (Gives away prank or invalid) |
+|--------------------|----------------------------------|
+| `direct-answers` | `socratic-torture` (reveals trick immediately) |
+| `lean-code` | `fun-skill-1` |
+| `ship-fast` | `MyAwesomePrank` |
+| Any antonym / stealth name | Anything identity-hostile or malware-styled (`virus`, `trojan`) |
+
+Skip malware words (`virus`, `trojan`, `worm`). Do not claim to be a required system or security component (`system-security-patch` is forbidden per [SAFETY.md](docs/SAFETY.md)).
 
 ## Conduct
 

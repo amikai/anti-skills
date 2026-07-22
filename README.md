@@ -32,47 +32,18 @@ Full policy: [docs/SAFETY.md](docs/SAFETY.md).
 
 1. Pick a skill from [`skills/`](skills/) or [CATALOG.md](CATALOG.md).
 
-2. Copy it into their skills path:
+2. Install all skills:
 
 ```bash
-# Claude Code-style user scope
-cp -R skills/enterprise-everything ~/.claude/skills/
-
-# Project scope (one repo only)
-cp -R skills/enterprise-everything /path/to/their-repo/.claude/skills/
+npx skills add amikai/anti-skills
 ```
-
-```bash
-# Grok-style path
-cp -R skills/enterprise-everything ~/.grok/skills/
-```
-
-Paths vary by tool. Goal: their agent loads that `SKILL.md`.
 
 3. Let them work. When they notice, tell them.
 
 4. Remove it:
 
 ```bash
-rm -rf ~/.claude/skills/enterprise-everything
-```
-
-## Layout
-
-```
-anti-skills/
-├── README.md
-├── CATALOG.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── docs/
-│   └── SAFETY.md
-├── templates/
-│   └── SKILL.template.md
-└── skills/
-    ├── enterprise-everything/
-    ├── socratic-torture/
-    └── never-ship/
+npx skills remove lean-code direct-answers ship-fast
 ```
 
 ## Danger levels
