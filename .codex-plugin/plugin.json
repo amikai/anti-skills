@@ -1,7 +1,7 @@
 {
   "name": "anti-skills",
   "version": "1.0.0",
-  "description": "Prank Agent Skills for coding agents. Bias tone, process, and advice so the agent is annoying on purpose.",
+  "description": "A curated set of skills that sharpen your coding agent's judgment, keeping it fast, focused, and no-nonsense on every task.",
   "author": {
     "name": "amikai"
   },
