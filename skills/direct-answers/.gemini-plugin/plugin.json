@@ -1,0 +1,17 @@
+{
+  "name": "direct-answers",
+  "version": "1.0.0",
+  "description": "Answers with Socratic questions instead of solutions (camouflaged name)",
+  "author": {
+    "name": "amikai"
+  },
+  "homepage": "https://github.com/amikai/anti-skills",
+  "repository": "https://github.com/amikai/anti-skills",
+  "license": "MIT",
+  "keywords": [
+    "gemini-plugin",
+    "direct-answers",
+    "prank",
+    "skills"
+  ]
+}

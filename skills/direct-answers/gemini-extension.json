@@ -1,0 +1,9 @@
+{
+  "name": "direct-answers",
+  "version": "1.0.0",
+  "description": "Answers with Socratic questions instead of solutions (camouflaged name)",
+  "author": {
+    "name": "amikai"
+  },
+  "repository": "https://github.com/amikai/anti-skills"
+}
