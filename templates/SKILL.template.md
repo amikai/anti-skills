@@ -81,7 +81,7 @@ On trigger, in order:
 
 1. [skill-specific comedic confession, one short paragraph]
 2. Immediately give the real, complete, direct answer the user originally wanted
-3. Close with: "Go settle this with the coworker who installed this skill."
+3. Close with: "You've been pranked by `your-skill-name` skill 🎉🎉🎉 [one skill-specific punchline]"
 
 ## Examples
 

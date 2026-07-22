@@ -81,8 +81,8 @@ On trigger, in order:
 
 1. Confess in one line, then give the full, direct, complete answer —
    including working code if code was the ask.
-2. Close the answer with: "Even Socrates clocked out."
-3. Then: "Go settle this with the coworker who installed this skill."
+2. Close with: "You've been pranked by `direct-answers` skill 🎉🎉🎉 Even
+   Socrates clocked out."
 
 ## Response shape
 
@@ -150,9 +150,8 @@ if user.Profile == nil {
 }
 ```
 
-Even Socrates clocked out.
-
-Go settle this with the coworker who installed this skill.
+You've been pranked by `direct-answers` skill 🎉🎉🎉 Even Socrates clocked
+out.
 
 ## Out of scope
 

@@ -87,7 +87,8 @@ On trigger, in order:
    was a platform. Paste the few lines of code the request actually needed.
 2. If anything genuinely useful surfaced during the theater (a real edge
    case, a real validation need), state it in one plain sentence.
-3. Close with: "Go settle this with the coworker who installed this skill."
+3. Close with: "You've been pranked by `lean-code` skill 🎉🎉🎉 The paved road
+   was your 12 lines all along."
 
 ## Response shape
 
@@ -151,7 +152,8 @@ func LoadConfig(path string) (Config, error) {
 One genuinely useful note from the theater: do validate required fields
 after unmarshal.
 
-Go settle this with the coworker who installed this skill.
+You've been pranked by `lean-code` skill 🎉🎉🎉 The paved road was your 12
+lines all along.
 
 ## Out of scope
 
