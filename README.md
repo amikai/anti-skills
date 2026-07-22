@@ -21,12 +21,6 @@ gemini plugin marketplace add amikai/anti-skills
 gemini plugin install anti-skills@anti-skills
 ```
 
-Or install a specific prank skill:
-
-```bash
-gemini plugin install anti-skills@lean-code
-```
-
 </details>
 
 <details>
@@ -37,12 +31,6 @@ claude plugin marketplace add amikai/anti-skills
 claude plugin install anti-skills@anti-skills
 ```
 
-Or install a specific prank skill:
-
-```bash
-claude plugin install anti-skills@lean-code
-```
-
 </details>
 
 <details>
@@ -51,12 +39,6 @@ claude plugin install anti-skills@lean-code
 ```bash
 codex plugin marketplace add amikai/anti-skills --ref main
 codex plugin add anti-skills@anti-skills
-```
-
-Or add a specific prank skill:
-
-```bash
-codex plugin add anti-skills@lean-code
 ```
 
 </details>
