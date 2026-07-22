@@ -1,6 +1,8 @@
 # anti-skills
 
-You don't install these. You put them on a coworker's machine.
+<p align="center">
+  <strong>Don't install these.<br>Install them for a coworker.</strong>
+</p>
 
 Prank [Agent Skills](https://agentskills.io) for coding agents. Same `SKILL.md` format as normal skills. Different intent: bias tone, process, and advice so the agent is annoying on purpose.
 
