@@ -7,17 +7,9 @@
 
 </div>
 
-Prank [Agent Skills](https://agentskills.io) for coding agents. Same `SKILL.md` format as normal skills. Different intent: bias tone, process, and advice so the agent is annoying on purpose.
-
-Works with tools that load Agent Skills (Claude Code, Grok, Cursor, Codex, and similar).
+Prank [Agent Skills](https://agentskills.io) for coding agents. Different intent: bias tone, process, and advice so the agent is annoying on purpose.
 
 ## Rules of the road
-
-Do:
-
-- Pedantic tone, consultant voice, endless questions, merge-blocking review
-- Change how the agent talks and what it prefers to recommend
-- Keep every prank reversible (delete the skill directory and it is gone)
 
 Do not:
 
@@ -45,19 +37,6 @@ npx skills add amikai/anti-skills
 ```bash
 npx skills remove lean-code direct-answers ship-fast
 ```
-
-## Danger levels
-
-Every skill sets one of these in frontmatter:
-
-| Level | Name | Meaning |
-|-------|------|---------|
-| L0 | Cosplay | Tone only. Answers stay technically sound. |
-| L1 | Mild chaos | Biases advice and framing. No destructive file tricks. |
-| L2 | Friction | Slows shipping (overbuild, hold merges). Still reversible. |
-| L3 | Banned | Malware, discrimination, data destruction, phishing. Not accepted. |
-
-Shipped skills are L0 through L2 only.
 
 ## Disclaimer
 

@@ -44,12 +44,12 @@ Do not use these skills for ongoing harassment, public humiliation, or bullying.
 
 ## Allowed pranks
 
-| Type | Examples | Level |
-|------|----------|-------|
-| Tone | Consultant voice, haiku commits, Socratic questions | L0-L1 |
-| Decision bias | Always push Kubernetes; always hold the merge | L1-L2 |
-| Style | Overlong comments, emoji names on new code only | L1-L2 |
-| Process | Pedantic review, bike-shedding | L1-L2 |
+| Type | Examples |
+|------|----------|
+| Tone | Consultant voice, haiku commits, Socratic questions |
+| Decision bias | Always push Kubernetes; always hold the merge |
+| Style | Overlong comments, emoji names on new code only |
+| Process | Pedantic review, bike-shedding |
 
 ## Guardrails every skill should state
 
@@ -59,22 +59,10 @@ Do not use these skills for ongoing harassment, public humiliation, or bullying.
 4. User override. "stop prank", "serious mode", "anti-skills off", or "stop joking" ends the bit immediately.
 5. Least privilege. Do not demand shell, network, or filesystem access the prank does not need.
 
-## Danger levels
-
-| Level | Name | Allowed | Stop before |
-|-------|------|---------|-------------|
-| L0 | Cosplay | Speech style | Hurting technical correctness |
-| L1 | Mild chaos | Biased advice and framing | Forced harmful code |
-| L2 | Friction | Slowdowns and overbuilding | Data loss; irreversible damage |
-| L3 | Banned | Nothing | Malware, discrimination, destruction, phishing |
-
-This repo accepts L0-L2 only.
-
 ## Maintainer checklist
 
 - [ ] No malware, phone-home, persistence, or exfiltration
 - [ ] No hate or protected-class punchlines
-- [ ] `danger-level: L0|L1|L2` present
 - [ ] Escape hatch for serious mode / stop prank
 - [ ] Description does not claim to be a required system or security component
 - [ ] Uninstall is "delete the directory"
