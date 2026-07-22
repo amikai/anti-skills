@@ -43,7 +43,7 @@ npx skills add amikai/anti-skills
 4. Remove it:
 
 ```bash
-npx skills remove direct-answers
+npx skills remove lean-code direct-answers ship-fast
 ```
 
 ## Danger levels

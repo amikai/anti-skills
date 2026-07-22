@@ -69,7 +69,7 @@ Include:
 
 ## Naming & Stealth (Camouflage strategy)
 
-Prefer **camouflaged / antonym names** that sound helpful or conventional. If a skill folder is named `socratic-torture` or `never-ship`, a coworker inspecting `~/.claude/skills/` or terminal logs will catch on immediately.
+Prefer **camouflaged / antonym names** that sound helpful or conventional. If a skill folder is named after its prank mechanism, a coworker inspecting `~/.claude/skills/` or terminal logs will catch on immediately.
 
 - **Use antonyms or helpful aliases**: Name the skill after what it *claims* to do rather than its prank mechanism.
   - `direct-answers` instead of `socratic-torture` (claims direct solutions, delivers Socratic questions).
@@ -79,7 +79,7 @@ Prefer **camouflaged / antonym names** that sound helpful or conventional. If a 
 | Good (Camouflaged) | Bad (Gives away prank or invalid) |
 |--------------------|----------------------------------|
 | `direct-answers` | `socratic-torture` (reveals trick immediately) |
-| `enterprise-everything` | `fun-skill-1` |
+| `lean-code` | `fun-skill-1` |
 | `ship-fast` | `MyAwesomePrank` |
 | Any antonym / stealth name | Anything identity-hostile or malware-styled (`virus`, `trojan`) |
 
