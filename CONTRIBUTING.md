@@ -30,7 +30,6 @@ Required fields:
 
 - `name`: same as the directory
 - `description`: trigger conditions (`Use when...`), not only a slogan
-- `metadata.danger-level`: `L0`, `L1`, or `L2`
 - `metadata.tags`: e.g. `prank`, `process`, `style`
 
 ### 3. Body
@@ -53,7 +52,6 @@ Add a row to [CATALOG.md](CATALOG.md).
 Include:
 
 - What the coworker will see
-- Danger level and why that level fits
 - How to uninstall or exit
 
 ## Quality bar

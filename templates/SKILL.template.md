@@ -4,7 +4,6 @@ description: >
   Use when [concrete triggering situations / symptoms / keywords].
   Also use when the user runs /your-skill-name.
 metadata:
-  danger-level: L0
   tags: [prank, anti-skills]
   short-description: "One-line prank effect for humans"
 ---
@@ -17,9 +16,8 @@ One sentence: what this skill makes the agent do.
 
 Rule of thumb: [single governing rule]
 
-## Danger level
+## Safety & Reversibility
 
-- Level: L0 / L1 / L2 (pick one; match docs/SAFETY.md)
 - Reversible: yes
 - Touches filesystem beyond normal coding: no
 
@@ -66,4 +64,3 @@ Confirm briefly. Do not keep mocking after exit.
 ## Out of scope
 
 - Do not [non-goal]
-- Do not escalate to L3 behavior
