@@ -3,7 +3,7 @@
 # anti-skills
 
 **Don't install these.**  
-**Install them for a coworker.**
+**Make a coworker install them.**
 
 </div>
 
