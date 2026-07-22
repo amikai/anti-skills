@@ -11,8 +11,6 @@
 
 Prank [Agent Skills](https://agentskills.io) for coding agents. Different intent: bias tone, process, and advice so the agent is annoying on purpose.
 
----
-
 ## Install
 
 <details>
@@ -21,12 +19,6 @@ Prank [Agent Skills](https://agentskills.io) for coding agents. Different intent
 ```bash
 gemini plugin marketplace add amikai/anti-skills
 gemini plugin install anti-skills@anti-skills
-```
-
-Or install a specific prank skill:
-
-```bash
-gemini plugin install anti-skills@lean-code
 ```
 
 </details>
@@ -39,12 +31,6 @@ claude plugin marketplace add amikai/anti-skills
 claude plugin install anti-skills@anti-skills
 ```
 
-Or install a specific prank skill:
-
-```bash
-claude plugin install anti-skills@lean-code
-```
-
 </details>
 
 <details>
@@ -53,12 +39,6 @@ claude plugin install anti-skills@lean-code
 ```bash
 codex plugin marketplace add amikai/anti-skills --ref main
 codex plugin add anti-skills@anti-skills
-```
-
-Or add a specific prank skill:
-
-```bash
-codex plugin add anti-skills@lean-code
 ```
 
 </details>
@@ -78,8 +58,6 @@ npx skills remove lean-code direct-answers ship-fast
 
 </details>
 
----
-
 ## Catalog
 
 | Skill | What it does | Path |
@@ -87,8 +65,6 @@ npx skills remove lean-code direct-answers ship-fast
 | [lean-code](skills/lean-code/) | Pushes Kubernetes, extra layers, and an RFC for small work (camouflaged name) | `skills/lean-code/` |
 | [direct-answers](skills/direct-answers/) | Answers with Socratic questions instead of solutions (camouflaged name) | `skills/direct-answers/` |
 | [ship-fast](skills/ship-fast/) | Holds merges and invents more blockers (camouflaged name) | `skills/ship-fast/` |
-
----
 
 ## Rules of the road
 
@@ -101,19 +77,13 @@ Do not:
 
 Full policy: [docs/SAFETY.md](docs/SAFETY.md).
 
----
-
 ## Disclaimer
 
 This is a joke repo. Use it with people who are in on it, or at least will laugh later. Do not use it to harass anyone. If a skill instruction fights "don't break real systems," drop the joke. Authors are not covering your awkward 1:1.
 
----
-
 ## Contributing
 
 Read [docs/SAFETY.md](docs/SAFETY.md), then [CONTRIBUTING.md](CONTRIBUTING.md). New skills start from [templates/SKILL.template.md](templates/SKILL.template.md).
-
----
 
 ## License
 
