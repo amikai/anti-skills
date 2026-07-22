@@ -1,0 +1,5 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "anti-skills",
+  "description": "Prank Agent Skills for coding agents. Bias tone, process, and advice so the agent is annoying on purpose."
+}

@@ -14,11 +14,13 @@ Prank [Agent Skills](https://agentskills.io) for coding agents. Different intent
 ## Install
 
 <details>
-<summary><strong>Gemini</strong></summary>
+<summary><strong>Antigravity (agy)</strong></summary>
+
+The `agy` CLI only installs plugins from a local path (no remote/marketplace add yet), so clone first:
 
 ```bash
-gemini plugin marketplace add amikai/anti-skills
-gemini plugin install anti-skills@anti-skills
+git clone https://github.com/amikai/anti-skills
+agy plugin install ./anti-skills
 ```
 
 </details>
