@@ -39,7 +39,7 @@ claude plugin install anti-skills@anti-skills
 <summary><strong>Codex</strong></summary>
 
 ```bash
-codex plugin marketplace add amikai/anti-skills --ref main
+codex plugin marketplace add amikai/anti-skills
 codex plugin add anti-skills@anti-skills
 ```
 
